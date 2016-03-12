@@ -27,7 +27,7 @@ ES6 Proxies are currently supported by the latest stable version of Chrome, Fire
 
 ### `makeify().any.path['here'][3](optionalValue)`
 
-The path is any valid javascript path. Makeify will return an object matching the path with the final property being set to the `optionalValue`
+The path is any valid javascript property path. Makeify will return an object matching the path with the final property being set to the `optionalValue`
 
 [npm-image]: https://img.shields.io/npm/v/makeify.svg
 [npm-url]: https://npmjs.org/package/makeify
