@@ -1,6 +1,6 @@
 {
   "name": "makeify",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "lib/makeify.js",
   "scripts": {
     "test": "./node_modules/.bin/karma start --single-run",
