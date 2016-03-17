@@ -6,10 +6,15 @@ Makeify is a utility to create deeply nested objects from paths. Similar to loda
 
 ## How to use
 
-```
+```javascript
 import makeify from 'makeify'
 
+// Create a new object
 const value = makeify().deeply.nested[1]('a value'); //  === { deeply: { nested : [undefined, 'a value '] } }
+
+// Mutate an existing object
+const obj = { key: 'value' }
+makeify(obj).key2('value 2') // obj === { key: 'value', key2: 'value 2'}
 
 ```
 
