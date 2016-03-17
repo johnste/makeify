@@ -6,10 +6,15 @@ Makeify is a utility to create deeply nested objects from paths. Similar to loda
 
 ## How to use
 
-```
+```javascript
 import makeify from 'makeify'
 
+// Create a new object
 const value = makeify().deeply.nested[1]('a value'); //  === { deeply: { nested : [undefined, 'a value '] } }
+
+// Mutate an existing object
+const obj = { key: 'value' }
+makeify(obj).key2('value 2') // obj === { key: 'value', key2: 'value 2'}
 
 ```
 
@@ -27,7 +32,13 @@ ES6 Proxies are currently supported by the latest stable version of Chrome, Fire
 
 ### `makeify().any.path['here'][3](optionalValue)`
 
-The path is any valid javascript property path. Makeify will return an object matching the path with the final property being set to the `optionalValue`
+The path is any valid javascript property path.
+*Returns* an object matching the path with the final property being set to the `optionalValue`
+
+### `makeify(object).any.path['here'][3](optionalValue)`
+
+Mutates `object` and adds the path to it.
+*Returns* the `object` with added properties.
 
 [npm-image]: https://img.shields.io/npm/v/makeify.svg
 [npm-url]: https://npmjs.org/package/makeify
