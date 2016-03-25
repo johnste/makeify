@@ -3,7 +3,8 @@
 Makeify is a utility to create deeply nested objects from paths. Similar to lodash's `_.set`. Makeify uses [ES6 proxies](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Proxy) to enable a convenient syntax.
 
 [![NPM Version][npm-image]][npm-url] [![Build Status](https://travis-ci.org/johnste/makeify.svg?branch=master)](https://travis-ci.org/johnste/makeify)
-
+[![Dependency Status](https://david-dm.org/johnste/makeify.svg)](https://david-dm.org/johnste/makeify)
+[![devDependency Status](https://david-dm.org/johnste/makeify/dev-status.svg)](https://david-dm.org/johnste/makeify#info=devDependencies)
 ## How to use
 
 ```javascript
